@@ -49,8 +49,14 @@ async def get_pool() -> asyncpg.Pool:
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    await get_pool()
-    log.info("✅ DB Pool ready")
+    # Lazy DB mode for Render: do not fail app boot if DB is unavailable.
+    try:
+        if DB_URL:
+            log.info("🚀 API startup complete (DB pool will initialize on first request)")
+        else:
+            log.warning("⚠️ DATABASE_URL is missing at startup (lazy DB init)")
+    except Exception as e:
+        log.warning("⚠️ startup DB check skipped: %s", e)
     yield
     if _pool: await _pool.close()
 
