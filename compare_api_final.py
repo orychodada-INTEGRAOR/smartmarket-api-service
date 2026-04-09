@@ -32,6 +32,11 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s", datefm
 log = logging.getLogger("api")
 
 DB_URL = os.getenv("DATABASE_URL", "")
+SUPABASE_URL = (
+    os.getenv("SUPABASE_URL", "")
+    or os.getenv("NEXT_PUBLIC_SUPABASE_URL", "")
+).rstrip("/")
+SUPABASE_SERVICE_ROLE_KEY = os.getenv("SUPABASE_SERVICE_ROLE_KEY", "")
 
 # ══ Pool ═════════════════════════════════════════
 _pool: Optional[asyncpg.Pool] = None
@@ -435,6 +440,76 @@ async def get_stats():
         "stores":    dict(stores),
         "generated": datetime.now().isoformat()
     }
+
+
+@app.get("/api/admin/chains-status")
+async def get_admin_chains_status():
+    pool = await get_pool()
+    async with pool.acquire() as conn:
+        rows = await conn.fetch(
+            """
+            SELECT
+                chain_name,
+                COUNT(*) AS products,
+                MAX(updated_at) AS last_run
+            FROM products
+            GROUP BY chain_name
+            ORDER BY last_run DESC NULLS LAST
+            """
+        )
+
+    chains = [
+        {
+            "chain_name": r["chain_name"],
+            "products": int(r["products"] or 0),
+            "last_run": r["last_run"].isoformat() if r["last_run"] else None,
+            "status": "ok",
+            "last_run_at": r["last_run"].isoformat() if r["last_run"] else None,
+        }
+        for r in rows
+    ]
+    return {"count": len(chains), "chains": chains}
+
+
+@app.post("/api/admin/scrape")
+async def post_admin_scrape():
+    script = os.path.join(os.path.dirname(__file__), "run_all_data.py")
+    subprocess.Popen(["python", script], cwd=os.path.dirname(__file__))
+    return {"status": "started", "message": "Scrape started"}
+
+
+@app.get("/api/admin/recent-users")
+async def get_admin_recent_users():
+    if not SUPABASE_URL or not SUPABASE_SERVICE_ROLE_KEY:
+        raise HTTPException(status_code=500, detail="Supabase admin credentials are not configured")
+
+    url = f"{SUPABASE_URL}/auth/v1/admin/users?page=1&per_page=20"
+    headers = {
+        "apikey": SUPABASE_SERVICE_ROLE_KEY,
+        "Authorization": f"Bearer {SUPABASE_SERVICE_ROLE_KEY}",
+    }
+    async with httpx.AsyncClient(timeout=20) as client:
+        resp = await client.get(url, headers=headers)
+
+    if resp.status_code >= 400:
+        raise HTTPException(status_code=resp.status_code, detail=f"Supabase admin error: {resp.text}")
+
+    payload = resp.json()
+    users = payload.get("users", []) if isinstance(payload, dict) else []
+    users_sorted = sorted(
+        users,
+        key=lambda u: u.get("created_at") or "",
+        reverse=True,
+    )[:20]
+    normalized = [
+        {
+            "id": u.get("id"),
+            "email": u.get("email"),
+            "created_at": u.get("created_at"),
+        }
+        for u in users_sorted
+    ]
+    return {"count": len(normalized), "users": normalized}
 
 # ══ Health ════════════════════════════════════
 @app.get("/health")
