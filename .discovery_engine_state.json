@@ -1,0 +1,171 @@
+{
+  "runs": [
+    {
+      "chain": "קרפור",
+      "domain": "prices.carrefour.co.il",
+      "type": "gov_xml",
+      "products": 0,
+      "at": "2026-04-11T09:58:46.662828+00:00",
+      "note": "delegated_to_existing_engines"
+    },
+    {
+      "chain": "קרפור",
+      "domain": "prices.carrefour.co.il",
+      "type": "gov_xml",
+      "products": 0,
+      "at": "2026-04-11T09:59:17.587981+00:00",
+      "note": "delegated_to_existing_engines"
+    },
+    {
+      "chain": "ויקטורי",
+      "domain": "laibcatalog.co.il",
+      "type": "gov_xml",
+      "products": 0,
+      "at": "2026-04-11T09:59:34.240544+00:00",
+      "note": "delegated_to_existing_engines"
+    },
+    {
+      "chain": "ח. כהן סוכנות מזון",
+      "domain": "laibcatalog.co.il",
+      "type": "gov_xml",
+      "products": 0,
+      "at": "2026-04-11T09:59:43.479617+00:00",
+      "note": "delegated_to_existing_engines"
+    },
+    {
+      "chain": "מחסני השוק",
+      "domain": "laibcatalog.co.il",
+      "type": "gov_xml",
+      "products": 0,
+      "at": "2026-04-11T09:59:52.394246+00:00",
+      "note": "delegated_to_existing_engines"
+    },
+    {
+      "chain": "חצי חינם",
+      "domain": "shop.hazi-hinam.co.il",
+      "type": "playwright",
+      "products": 0,
+      "at": "2026-04-11T10:00:04.988018+00:00"
+    },
+    {
+      "chain": "סופר חסד",
+      "domain": "141.226.203.152",
+      "type": "playwright",
+      "products": 0,
+      "at": "2026-04-11T10:00:17.880063+00:00"
+    },
+    {
+      "chain": "סופר פארם",
+      "domain": "shop.super-pharm.co.il",
+      "type": "api",
+      "products": 0,
+      "at": "2026-04-11T10:00:31.898484+00:00"
+    },
+    {
+      "chain": "שופרסל",
+      "domain": "prices.shufersal.co.il",
+      "type": "gov_xml",
+      "products": 0,
+      "at": "2026-04-11T10:01:11.351618+00:00",
+      "note": "delegated_to_existing_engines"
+    },
+    {
+      "chain": "קסטרו",
+      "domain": "www.castro.com",
+      "type": "playwright",
+      "products": 0,
+      "at": "2026-04-11T10:01:27.889857+00:00"
+    },
+    {
+      "chain": "פוקס",
+      "domain": "fox.co.il",
+      "type": "shopify",
+      "products": 6653,
+      "at": "2026-04-11T10:02:17.595556+00:00"
+    },
+    {
+      "chain": "KSP",
+      "domain": "ksp.co.il",
+      "type": "playwright",
+      "products": 0,
+      "at": "2026-04-11T10:04:04.801073+00:00"
+    },
+    {
+      "chain": "איוורי",
+      "domain": "www.ivory.co.il",
+      "type": "playwright",
+      "products": 0,
+      "at": "2026-04-11T10:04:21.500049+00:00"
+    },
+    {
+      "chain": "iDigital",
+      "domain": "www.idigital.co.il",
+      "type": "playwright",
+      "products": 0,
+      "at": "2026-04-11T10:04:29.869554+00:00"
+    },
+    {
+      "chain": "Bug",
+      "domain": "www.bug.co.il",
+      "type": "playwright",
+      "products": 0,
+      "at": "2026-04-11T10:04:39.133477+00:00"
+    },
+    {
+      "chain": "ACE",
+      "domain": "www.ace.co.il",
+      "type": "playwright",
+      "products": 1,
+      "at": "2026-04-11T10:04:50.121504+00:00"
+    },
+    {
+      "chain": "IKEA",
+      "domain": "www.ikea.com",
+      "type": "playwright",
+      "products": 0,
+      "at": "2026-04-11T10:04:58.057658+00:00"
+    },
+    {
+      "chain": "עמינח",
+      "domain": "www.aminach.co.il",
+      "type": "shopify",
+      "products": 115,
+      "at": "2026-04-11T10:05:02.624033+00:00"
+    },
+    {
+      "chain": "מקס סטוק",
+      "domain": "maxstock.com",
+      "type": "playwright",
+      "products": 0,
+      "at": "2026-04-11T10:05:12.595319+00:00"
+    },
+    {
+      "chain": "זולסטוק",
+      "domain": "zolstock.co.il",
+      "type": "woocommerce",
+      "products": 0,
+      "at": "2026-04-11T10:05:18.451037+00:00"
+    },
+    {
+      "chain": "סופר פארם",
+      "domain": "shop.super-pharm.co.il",
+      "type": "api",
+      "products": 0,
+      "at": "2026-04-11T10:05:25.466921+00:00"
+    },
+    {
+      "chain": "NEW PHARM",
+      "domain": "newpharm.com",
+      "type": "playwright",
+      "products": 0,
+      "at": "2026-04-11T10:05:34.302150+00:00"
+    },
+    {
+      "chain": "Be",
+      "domain": "www.be.com",
+      "type": "woocommerce",
+      "products": 0,
+      "at": "2026-04-11T10:05:41.705928+00:00"
+    }
+  ]
+}

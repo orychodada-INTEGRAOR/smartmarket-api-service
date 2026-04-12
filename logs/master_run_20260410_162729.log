@@ -1,0 +1,171 @@
+SmartMarket MASTER_RUN start 20260410_162729 quick=True run=#2
+
+════════════════════════════════════════════════════════════
+>>> C:\smartmarket\smartmarket_api\SmartMarket\integrator\.venv\Scripts\python.exe C:\smartmarket\smartmarket_api\SmartMarket\integrator\fetch_all_stores.py
+════════════════════════════════════════════════════════════
+16:27:34 [Stores] ��� ���
+16:27:34   ��� ���: 15 ������
+16:27:35   \U0001f4be 15 ������ ����� (��� ���)
+16:27:35 [Stores] �������
+16:27:35   �������: 10 ������
+16:27:35   \U0001f4be 10 ������ ����� (�������)
+16:27:35 [Stores] ������
+16:27:37   ������: 4 ������
+16:27:38   \U0001f4be 4 ������ ����� (������)
+16:27:38 [Stores] �������
+16:27:39   �������: 3 ������
+16:27:40   \U0001f4be 3 ������ ����� (�������)
+16:27:40 [Stores] PublishedPrices � ���� ����� ��������...
+16:27:40   [��� ���]
+16:27:53   [�������]
+16:28:06   [���� ��]
+16:28:16   [��� ���]
+16:28:23   [�������]
+
+=======================================================
+  SmartMarket � Stores Fetcher v2
+  10/04/2026 16:27
+=======================================================
+
+
+=======================================================
+Traceback (most recent call last):
+  File "C:\smartmarket\smartmarket_api\SmartMarket\integrator\fetch_all_stores.py", line 334, in <module>
+    main()
+    ~~~~^^
+  File "C:\smartmarket\smartmarket_api\SmartMarket\integrator\fetch_all_stores.py", line 316, in main
+    print(f"  \u2705 ��\"� ������ �����: {total}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1255.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 2: character maps to <undefined>
+[FAIL] exit code 1
+
+════════════════════════════════════════════════════════════
+>>> C:\smartmarket\smartmarket_api\SmartMarket\integrator\.venv\Scripts\python.exe C:\smartmarket\smartmarket_api\SmartMarket\integrator\html_scraper.py
+════════════════════════════════════════════════════════════
+16:28:34 
+==================================================
+16:28:34 [HTML] ��� ����
+16:28:34   [��� ����] https://www.hazi-hinam.co.il/category/
+16:28:37     dairy: 12 ������
+16:28:40     bread: 30 ������
+16:28:43     vegetables: 12 ������
+16:28:44   ��"�: 54 ������
+16:28:45   \U0001f4be 54 �����
+16:28:45 
+==================================================
+16:28:45 [HTML] ���� ����
+16:28:45   [���� ����] https://www.netiv-hachesed.co.il/online-store/
+16:28:45   ��"�: 0 ������
+16:28:45   ��� ������
+16:28:45 
+==================================================
+16:28:45 [HTML] ���� ����
+16:28:45   [���� ����] https://www.citymarket.co.il/store/
+16:28:45     Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.citymarket.co.il/store/
+Call log:
+  - navigating to "https://www.citymarket.co.il/store/", waiting until "domcontentloaded"
+
+16:28:45   ��"�: 0 ������
+16:28:45   ��� ������
+16:28:45 
+==================================================
+16:28:45 [HTML] ���.��
+16:28:45   [���.��] https://www.kt.co.il/
+16:28:45   ��"�: 0 ������
+16:28:45   ��� ������
+
+=======================================================
+  SmartMarket � HTML Scraper
+  4 ����� | LIVE
+  10/04/2026 16:28
+=======================================================
+
+
+=======================================================
+Traceback (most recent call last):
+  File "C:\smartmarket\smartmarket_api\SmartMarket\integrator\html_scraper.py", line 357, in <module>
+    asyncio.run(run(chain_id=a.chain, dry_run=a.dry_run, test=a.test))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\smartmarket\smartmarket_api\SmartMarket\integrator\html_scraper.py", line 348, in run
+    print(f"  \u2705 HTML ��\"�: {grand_total} ������")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1255.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 2: character maps to <undefined>
+[FAIL] exit code 1
+
+════════════════════════════════════════════════════════════
+>>> C:\smartmarket\smartmarket_api\SmartMarket\integrator\.venv\Scripts\python.exe C:\smartmarket\smartmarket_api\SmartMarket\integrator\factory\playwright_baby.py
+════════════════════════════════════════════════════════════
+16:28:48 ========================================================
+16:28:48 SmartMarket Baby Scraper | 10/04/2026 16:28
+16:28:48 Mode: LIVE
+16:28:48 ========================================================
+16:28:49 
+========================================================
+16:28:49 [Baby] ���� � https://www.shilav.co.il
+16:29:05   extracted 8 candidates
+16:29:06   \U0001f4be saved 8 products
+16:29:06   \u2705 ����: 8
+16:29:07 
+========================================================
+16:29:07 [Baby] TerminalX Baby � https://www.terminalx.com/baby
+16:29:17   extracted 0 candidates
+16:29:17   no products extracted
+16:29:19 
+========================================================
+16:29:19 [Baby] Fox Baby � https://www.fox.co.il/baby
+16:29:31   extracted 0 candidates
+16:29:31   no products extracted
+16:29:33 
+========================================================
+16:29:33 Total saved (baby): 8
+16:29:33 ========================================================
+[FAIL] exit code 8
+
+════════════════════════════════════════════════════════════
+>>> C:\smartmarket\smartmarket_api\SmartMarket\integrator\.venv\Scripts\python.exe C:\smartmarket\smartmarket_api\SmartMarket\integrator\factory\openformat_scraper.py --limit 10000
+════════════════════════════════════════════════════════════
+16:29:37 ============================================================
+16:29:37 OpenFormat scraper start | 10/04/2026 16:29
+16:29:37 Mode: LIVE
+16:29:37 ============================================================
+16:29:37 Probe failed https://openformat.economy.gov.il/natural/: HTTPSConnectionPool(host='openformat.economy.gov.il', port=443): Max retries exceeded with url: /natural/ (Caused by NameResolutionError("HTTPSConnection(host='openformat.economy.gov.il', port=443): Failed to resolve 'openformat.economy.gov.il' ([Errno 11001] getaddrinfo failed)"))
+16:29:37 Probe failed https://openformat.economy.gov.il/natural/sitemap.xml: HTTPSConnectionPool(host='openformat.economy.gov.il', port=443): Max retries exceeded with url: /natural/sitemap.xml (Caused by NameResolutionError("HTTPSConnection(host='openformat.economy.gov.il', port=443): Failed to resolve 'openformat.economy.gov.il' ([Errno 11001] getaddrinfo failed)"))
+16:29:37 Probe failed https://openformat.economy.gov.il/natural/index.xml: HTTPSConnectionPool(host='openformat.economy.gov.il', port=443): Max retries exceeded with url: /natural/index.xml (Caused by NameResolutionError("HTTPSConnection(host='openformat.economy.gov.il', port=443): Failed to resolve 'openformat.economy.gov.il' ([Errno 11001] getaddrinfo failed)"))
+16:29:37 Probe failed https://openformat.economy.gov.il/natural/feed.xml: HTTPSConnectionPool(host='openformat.economy.gov.il', port=443): Max retries exceeded with url: /natural/feed.xml (Caused by NameResolutionError("HTTPSConnection(host='openformat.economy.gov.il', port=443): Failed to resolve 'openformat.economy.gov.il' ([Errno 11001] getaddrinfo failed)"))
+16:29:37 No XML links discovered from OpenFormat
+
+═══════════════════════════════════════
+  SmartMarket — Final Report
+  10/04/2026 | Run #2
+═══════════════════════════════════════
+  📦 מוצרים סה"כ:      403,730
+  🏪 חנויות:               296
+  🔗 רשתות:                 37
+
+  מזון:         403,326 (100%)
+  תינוקות:            8 (0%)
+  אלקטרוניקה:       396 (0%)
+
+  זמן ריצה: 0.0 שעות
+  הצליח: 1/4 סורקים
+═══════════════════════════════════════
+
+Failures:
+fetch_all_stores: exit code 1
+html (hazi-hinam etc): exit code 1
+baby/kids: exit code 8

@@ -1,0 +1,471 @@
+{
+  "pending_approval": [
+    {
+      "chain_name": "בגדי ים ישראל",
+      "url": null,
+      "category": "fashion",
+      "status": "pending",
+      "reason": "צריך גילוי אוטומטי"
+    }
+  ],
+  "approved": [
+    {
+      "chain_name": "אלמשהדאוי קינג סטור",
+      "url": "https://kingstore.binaprojects.com/Main.aspx",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "bina",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "מעיין אלפיים",
+      "url": "http://maayan2000.binaprojects.com/Main.aspx",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "bina",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "גוד פארם",
+      "url": "https://goodpharm.binaprojects.com/Main.aspx",
+      "category": "pharma",
+      "engine": "gov_xml",
+      "source": "bina",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "קרפור",
+      "url": "https://prices.carrefour.co.il/",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "קוויק",
+      "url": "https://prices.quik.co.il/",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "דור אלון",
+      "url": "https://url.publishedprices.co.il/login",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "status": "approved",
+      "approved_at": "2026-04-11",
+      "username": "doralon"
+    },
+    {
+      "chain_name": "וולט",
+      "url": "https://wm-gateway.wolt.com/isr-prices/public/v1/index.html",
+      "category": "food",
+      "engine": "api",
+      "source": "api",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "ויקטורי",
+      "url": "https://laibcatalog.co.il/",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "laib",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "זול ובגדול",
+      "url": "http://zolvebegadol.binaprojects.com/Main.aspx",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "bina",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "ח. כהן סוכנות מזון",
+      "url": "https://laibcatalog.co.il/",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "laib",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "טיב טעם",
+      "url": "https://url.publishedprices.co.il/login",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "status": "approved",
+      "approved_at": "2026-04-11",
+      "username": "TivTaam"
+    },
+    {
+      "chain_name": "מחסני השוק",
+      "url": "https://laibcatalog.co.il/",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "laib",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "חצי חינם",
+      "url": "https://shop.hazi-hinam.co.il/Prices",
+      "category": "food",
+      "engine": "html",
+      "source": "html",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "יוחננוף",
+      "url": "https://url.publishedprices.co.il/login",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "status": "approved",
+      "approved_at": "2026-04-11",
+      "username": "yohananof"
+    },
+    {
+      "chain_name": "אושר עד",
+      "url": "https://url.publishedprices.co.il/login",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "status": "approved",
+      "approved_at": "2026-04-11",
+      "username": "osherad"
+    },
+    {
+      "chain_name": "סופר חסד",
+      "url": "http://141.226.203.152/",
+      "category": "food",
+      "engine": "playwright",
+      "source": "direct",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "סאלח דבאח",
+      "url": "https://url.publishedprices.co.il/login",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "status": "approved",
+      "approved_at": "2026-04-11",
+      "username": "SalachD",
+      "password": "12345"
+    },
+    {
+      "chain_name": "סופר ספיר",
+      "url": "https://supersapir.binaprojects.com/Main.aspx",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "bina",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "סופר פארם",
+      "url": "https://www.super-pharm.co.il",
+      "category": "pharma",
+      "engine": "playwright",
+      "source": "direct",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "סיטי מרקט",
+      "url": "https://citymarketkiryatgat.binaprojects.com/Main.aspx",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "bina",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "סטופ מרקט",
+      "url": "https://url.retail.publishedprices.co.il/login",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "status": "approved",
+      "approved_at": "2026-04-11",
+      "username": "Stop_Market"
+    },
+    {
+      "chain_name": "עוף והודו ברקת",
+      "url": "http://superbareket.binaprojects.com/Main.aspx",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "bina",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "פוליצר חדרה",
+      "url": "https://url.publishedprices.co.il/login",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "status": "approved",
+      "approved_at": "2026-04-11",
+      "username": "politzer"
+    },
+    {
+      "chain_name": "פז קמעונאות יילו",
+      "url": "https://url.publishedprices.co.il/file",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "status": "approved",
+      "approved_at": "2026-04-11",
+      "username": "Paz_bo",
+      "password": "paz468"
+    },
+    {
+      "chain_name": "סופר יודה",
+      "url": "https://publishedprices.co.il/file",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "status": "approved",
+      "approved_at": "2026-04-11",
+      "username": "yuda_ho",
+      "password": "Yud@147"
+    },
+    {
+      "chain_name": "פרשמרקט",
+      "url": "https://url.publishedprices.co.il/login",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "status": "approved",
+      "approved_at": "2026-04-11",
+      "username": "freshmarket"
+    },
+    {
+      "chain_name": "משנת יוסף",
+      "url": "https://ktshivuk.binaprojects.com/Main.aspx",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "bina",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "קשת טעמים",
+      "url": "https://url.publishedprices.co.il/login",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "status": "approved",
+      "approved_at": "2026-04-11",
+      "username": "Keshet"
+    },
+    {
+      "chain_name": "רמי לוי",
+      "url": "https://url.publishedprices.co.il/login",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "status": "approved",
+      "approved_at": "2026-04-11",
+      "username": "RamiLevi"
+    },
+    {
+      "chain_name": "סופר קופיקס",
+      "url": "https://url.publishedprices.co.il/login",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "status": "approved",
+      "approved_at": "2026-04-11",
+      "username": "SuperCofixApp"
+    },
+    {
+      "chain_name": "שופרסל",
+      "url": "http://prices.shufersal.co.il/",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "shufersal",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "שוק העיר",
+      "url": "http://shuk-hayir.binaprojects.com/Main.aspx",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "bina",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "שפע ברכת השם",
+      "url": "http://shefabirkathashem.binaprojects.com/Main.aspx",
+      "category": "food",
+      "engine": "gov_xml",
+      "source": "bina",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "קסטרו",
+      "url": "https://www.castro.com",
+      "category": "fashion",
+      "engine": "woocommerce",
+      "source": "discovery",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "פוקס",
+      "url": "https://www.fox.co.il",
+      "category": "fashion",
+      "engine": "woocommerce",
+      "source": "discovery",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "H&M",
+      "url": "https://www.hm.com/il",
+      "category": "fashion",
+      "engine": "playwright",
+      "source": "discovery",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "זארה",
+      "url": "https://www.zara.com/il",
+      "category": "fashion",
+      "engine": "playwright",
+      "source": "discovery",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "KSP",
+      "url": "https://www.ksp.co.il",
+      "category": "electronics",
+      "engine": "api",
+      "source": "discovery",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "איוורי",
+      "url": "https://www.ivory.co.il",
+      "category": "electronics",
+      "engine": "api",
+      "source": "discovery",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "iDigital",
+      "url": "https://www.idigital.co.il",
+      "category": "electronics",
+      "engine": "api",
+      "source": "discovery",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "Bug",
+      "url": "https://www.bug.co.il",
+      "category": "electronics",
+      "engine": "playwright",
+      "source": "discovery",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "ACE",
+      "url": "https://www.ace.co.il",
+      "category": "home",
+      "engine": "sitemap",
+      "source": "discovery",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "IKEA",
+      "url": "https://www.ikea.com/il",
+      "category": "home",
+      "engine": "playwright",
+      "source": "discovery",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "עמינח",
+      "url": "https://www.aminach.co.il",
+      "category": "home",
+      "engine": "woocommerce",
+      "source": "discovery",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "מקס סטוק",
+      "url": "https://www.maxstock.co.il",
+      "category": "stock",
+      "engine": "playwright",
+      "source": "discovery",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "זולסטוק",
+      "url": "https://www.zolstock.co.il",
+      "category": "stock",
+      "engine": "woocommerce",
+      "source": "discovery",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "סופר פארם",
+      "url": "https://www.super-pharm.co.il",
+      "category": "pharma",
+      "engine": "playwright",
+      "source": "direct",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "NEW PHARM",
+      "url": "https://www.newpharm.co.il",
+      "category": "pharma",
+      "engine": "woocommerce",
+      "source": "discovery",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    },
+    {
+      "chain_name": "Be",
+      "url": "https://www.be.co.il",
+      "category": "pharma",
+      "engine": "playwright",
+      "source": "discovery",
+      "status": "approved",
+      "approved_at": "2026-04-11"
+    }
+  ],
+  "rejected": []
+}

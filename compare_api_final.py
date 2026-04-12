@@ -13,9 +13,9 @@ Port 8001 — כל ה-endpoints במקום אחד:
 הרץ: uvicorn compare_api_final:app --port 8001 --reload
 """
 
-import os, re, math, json, time, logging, asyncio, subprocess, sys
+import os, re, math, json, time, logging, asyncio, subprocess, sys, threading
 from datetime import datetime
-from typing import Optional, Literal, List
+from typing import Optional, Literal, List, Any, Dict
 from contextlib import asynccontextmanager
 
 import asyncpg
@@ -37,6 +37,62 @@ SUPABASE_URL = (
     or os.getenv("NEXT_PUBLIC_SUPABASE_URL", "")
 ).rstrip("/")
 SUPABASE_SERVICE_ROLE_KEY = os.getenv("SUPABASE_SERVICE_ROLE_KEY", "")
+
+_INTEGRATOR_DIR = os.path.dirname(os.path.abspath(__file__))
+NEW_SITES_QUEUE_PATH = os.path.join(_INTEGRATOR_DIR, "NEW_SITES_QUEUE.json")
+_sites_queue_lock = threading.Lock()
+
+
+def _default_sites_queue() -> Dict[str, Any]:
+    return {"pending_approval": [], "approved": [], "rejected": []}
+
+
+def _read_sites_queue() -> Dict[str, Any]:
+    data = _default_sites_queue()
+    if not os.path.isfile(NEW_SITES_QUEUE_PATH):
+        return data
+    try:
+        with open(NEW_SITES_QUEUE_PATH, "r", encoding="utf-8") as f:
+            raw = json.load(f)
+        if isinstance(raw, dict):
+            for k in data:
+                v = raw.get(k)
+                data[k] = v if isinstance(v, list) else []
+        return data
+    except Exception as e:
+        log.warning("NEW_SITES_QUEUE read failed: %s", e)
+        return _default_sites_queue()
+
+
+def _write_sites_queue(data: Dict[str, Any]) -> None:
+    with open(NEW_SITES_QUEUE_PATH, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+def _python_for_integrator() -> str:
+    win_py = os.path.join(_INTEGRATOR_DIR, ".venv", "Scripts", "python.exe")
+    if os.path.isfile(win_py):
+        return win_py
+    unix_py = os.path.join(_INTEGRATOR_DIR, ".venv", "bin", "python")
+    if os.path.isfile(unix_py):
+        return unix_py
+    return sys.executable
+
+
+def _start_master_run_quick() -> None:
+    script = os.path.join(_INTEGRATOR_DIR, "MASTER_RUN.py")
+    if not os.path.isfile(script):
+        log.warning("MASTER_RUN.py not found; skip quick scrape trigger")
+        return
+    cmd = [_python_for_integrator(), script, "--quick"]
+    kw: dict = dict(
+        cwd=_INTEGRATOR_DIR,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+    if sys.platform == "win32":
+        kw["creationflags"] = getattr(subprocess, "CREATE_NO_WINDOW", 0)
+    subprocess.Popen(cmd, **kw)
 
 # ══ Pool ═════════════════════════════════════════
 _pool: Optional[asyncpg.Pool] = None
@@ -84,6 +140,11 @@ class CompareResponse(BaseModel):
 
 class OnDemandRequest(BaseModel):
     query: str
+
+
+class AdminApproveSiteBody(BaseModel):
+    url: str
+    approved: bool
 
 # ══ Helpers ═══════════════════════════════════════
 def clean_price(s) -> float:
@@ -516,6 +577,69 @@ async def get_admin_recent_users():
         for u in users_sorted
     ]
     return {"count": len(normalized), "users": normalized}
+
+
+@app.get("/api/admin/pending-sites")
+async def get_admin_pending_sites():
+    with _sites_queue_lock:
+        data = _read_sites_queue()
+    pending = data.get("pending_approval") or []
+    return {"count": len(pending), "pending_approval": pending}
+
+
+@app.post("/api/admin/approve-site")
+async def post_admin_approve_site(body: AdminApproveSiteBody):
+    url_key = (body.url or "").strip()
+    if not url_key:
+        raise HTTPException(status_code=400, detail="url is required")
+
+    moved: Optional[dict] = None
+    with _sites_queue_lock:
+        data = _read_sites_queue()
+        pending = data.get("pending_approval") or []
+        idx = next(
+            (
+                i
+                for i, x in enumerate(pending)
+                if isinstance(x, dict) and (x.get("url") or "").strip() == url_key
+            ),
+            None,
+        )
+        if idx is None:
+            raise HTTPException(status_code=404, detail="URL not found in pending_approval")
+
+        item = dict(pending.pop(idx))
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        if body.approved:
+            item["status"] = "approved"
+            item["approved_at"] = now
+            data.setdefault("approved", []).append(item)
+        else:
+            item["status"] = "rejected"
+            item["rejected_at"] = now
+            data.setdefault("rejected", []).append(item)
+
+        data["pending_approval"] = pending
+        _write_sites_queue(data)
+        moved = item
+
+    scrape_started = False
+    if body.approved:
+        try:
+            _start_master_run_quick()
+            scrape_started = True
+        except Exception as e:
+            log.warning("quick scrape trigger failed: %s", e)
+
+    return {
+        "ok": True,
+        "url": url_key,
+        "approved": body.approved,
+        "item": moved,
+        "scrape_started": scrape_started,
+    }
+
 
 # ══ Health ════════════════════════════════════
 @app.get("/health")

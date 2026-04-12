@@ -1,0 +1,285 @@
+{
+  "chains": [
+    {
+      "id": 1,
+      "name": "אלמשהדאוי קינג סטור",
+      "type": "food",
+      "url": "https://kingstore.binaprojects.com/Main.aspx",
+      "engine": "gov_xml",
+      "source": "bina"
+    },
+    {
+      "id": 2,
+      "name": "מעיין אלפיים",
+      "type": "food",
+      "url": "http://maayan2000.binaprojects.com/Main.aspx",
+      "engine": "gov_xml",
+      "source": "bina"
+    },
+    {
+      "id": 3,
+      "name": "גוד פארם",
+      "type": "pharma",
+      "url": "https://goodpharm.binaprojects.com/Main.aspx",
+      "engine": "gov_xml",
+      "source": "bina"
+    },
+    {
+      "id": 4,
+      "name": "קרפור",
+      "type": "food",
+      "url": "https://prices.carrefour.co.il/",
+      "engine": "gov_xml",
+      "source": "publishedprices"
+    },
+    {
+      "id": 5,
+      "name": "קוויק",
+      "type": "food",
+      "url": "https://prices.quik.co.il/",
+      "engine": "gov_xml",
+      "source": "publishedprices"
+    },
+    {
+      "id": 6,
+      "name": "דור אלון",
+      "type": "food",
+      "url": "https://url.publishedprices.co.il/login",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "username": "doralon"
+    },
+    {
+      "id": 7,
+      "name": "וולט",
+      "type": "food",
+      "url": "https://wm-gateway.wolt.com/isr-prices/public/v1/index.html",
+      "engine": "api",
+      "source": "api"
+    },
+    {
+      "id": 8,
+      "name": "ויקטורי",
+      "type": "food",
+      "url": "https://laibcatalog.co.il/",
+      "engine": "gov_xml",
+      "source": "laib"
+    },
+    {
+      "id": 9,
+      "name": "זול ובגדול",
+      "type": "food",
+      "url": "http://zolvebegadol.binaprojects.com/Main.aspx",
+      "engine": "gov_xml",
+      "source": "bina"
+    },
+    {
+      "id": 10,
+      "name": "ח. כהן סוכנות מזון",
+      "type": "food",
+      "url": "https://laibcatalog.co.il/",
+      "engine": "gov_xml",
+      "source": "laib"
+    },
+    {
+      "id": 11,
+      "name": "טיב טעם",
+      "type": "food",
+      "url": "https://url.publishedprices.co.il/login",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "username": "TivTaam"
+    },
+    {
+      "id": 12,
+      "name": "מחסני השוק",
+      "type": "food",
+      "url": "https://laibcatalog.co.il/",
+      "engine": "gov_xml",
+      "source": "laib"
+    },
+    {
+      "id": 13,
+      "name": "חצי חינם",
+      "type": "food",
+      "url": "https://shop.hazi-hinam.co.il/Prices",
+      "engine": "html",
+      "source": "html"
+    },
+    {
+      "id": 14,
+      "name": "יוחננוף",
+      "type": "food",
+      "url": "https://url.publishedprices.co.il/login",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "username": "yohananof"
+    },
+    {
+      "id": 15,
+      "name": "אושר עד",
+      "type": "food",
+      "url": "https://url.publishedprices.co.il/login",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "username": "osherad"
+    },
+    {
+      "id": 16,
+      "name": "סופר חסד",
+      "type": "food",
+      "url": "http://141.226.203.152/",
+      "engine": "playwright",
+      "source": "direct"
+    },
+    {
+      "id": 17,
+      "name": "סאלח דבאח",
+      "type": "food",
+      "url": "https://url.publishedprices.co.il/login",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "username": "SalachD",
+      "password": "12345"
+    },
+    {
+      "id": 18,
+      "name": "סופר ספיר",
+      "type": "food",
+      "url": "https://supersapir.binaprojects.com/Main.aspx",
+      "engine": "gov_xml",
+      "source": "bina"
+    },
+    {
+      "id": 19,
+      "name": "סופר פארם",
+      "type": "pharma",
+      "url": "https://www.super-pharm.co.il",
+      "engine": "playwright",
+      "source": "direct"
+    },
+    {
+      "id": 20,
+      "name": "סיטי מרקט",
+      "type": "food",
+      "url": "https://citymarketkiryatgat.binaprojects.com/Main.aspx",
+      "engine": "gov_xml",
+      "source": "bina"
+    },
+    {
+      "id": 21,
+      "name": "סטופ מרקט",
+      "type": "food",
+      "url": "https://url.retail.publishedprices.co.il/login",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "username": "Stop_Market"
+    },
+    {
+      "id": 22,
+      "name": "עוף והודו ברקת",
+      "type": "food",
+      "url": "http://superbareket.binaprojects.com/Main.aspx",
+      "engine": "gov_xml",
+      "source": "bina"
+    },
+    {
+      "id": 23,
+      "name": "פוליצר חדרה",
+      "type": "food",
+      "url": "https://url.publishedprices.co.il/login",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "username": "politzer"
+    },
+    {
+      "id": 24,
+      "name": "פז קמעונאות יילו",
+      "type": "food",
+      "url": "https://url.publishedprices.co.il/file",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "username": "Paz_bo",
+      "password": "paz468"
+    },
+    {
+      "id": 25,
+      "name": "סופר יודה",
+      "type": "food",
+      "url": "https://publishedprices.co.il/file",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "username": "yuda_ho",
+      "password": "Yud@147"
+    },
+    {
+      "id": 26,
+      "name": "פרשמרקט",
+      "type": "food",
+      "url": "https://url.publishedprices.co.il/login",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "username": "freshmarket"
+    },
+    {
+      "id": 27,
+      "name": "משנת יוסף",
+      "type": "food",
+      "url": "https://ktshivuk.binaprojects.com/Main.aspx",
+      "engine": "gov_xml",
+      "source": "bina"
+    },
+    {
+      "id": 28,
+      "name": "קשת טעמים",
+      "type": "food",
+      "url": "https://url.publishedprices.co.il/login",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "username": "Keshet"
+    },
+    {
+      "id": 29,
+      "name": "רמי לוי",
+      "type": "food",
+      "url": "https://url.publishedprices.co.il/login",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "username": "RamiLevi"
+    },
+    {
+      "id": 30,
+      "name": "סופר קופיקס",
+      "type": "food",
+      "url": "https://url.publishedprices.co.il/login",
+      "engine": "gov_xml",
+      "source": "publishedprices",
+      "username": "SuperCofixApp"
+    },
+    {
+      "id": 31,
+      "name": "שופרסל",
+      "type": "food",
+      "url": "http://prices.shufersal.co.il/",
+      "engine": "gov_xml",
+      "source": "shufersal"
+    },
+    {
+      "id": 32,
+      "name": "שוק העיר",
+      "type": "food",
+      "url": "http://shuk-hayir.binaprojects.com/Main.aspx",
+      "engine": "gov_xml",
+      "source": "bina"
+    },
+    {
+      "id": 33,
+      "name": "שפע ברכת השם",
+      "type": "food",
+      "url": "http://shefabirkathashem.binaprojects.com/Main.aspx",
+      "engine": "gov_xml",
+      "source": "bina"
+    }
+  ],
+  "total": 33
+}

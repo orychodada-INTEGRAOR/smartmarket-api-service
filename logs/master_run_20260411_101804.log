@@ -1,0 +1,683 @@
+SmartMarket MASTER_RUN start 20260411_101804 quick=False run=#3
+
+════════════════════════════════════════════════════════════
+>>> C:\smartmarket\smartmarket_api\SmartMarket\integrator\.venv\Scripts\python.exe C:\smartmarket\smartmarket_api\SmartMarket\integrator\fetch_all_stores.py
+════════════════════════════════════════════════════════════
+10:18:26 [Stores] ��� ���
+10:18:26   ��� ���: 15 ������
+10:18:27   \U0001f4be 15 ������ ����� (��� ���)
+10:18:27 [Stores] �������
+10:18:27   �������: 10 ������
+10:18:27   \U0001f4be 10 ������ ����� (�������)
+10:18:27 [Stores] ������
+10:18:30   ������: 4 ������
+10:18:31   \U0001f4be 4 ������ ����� (������)
+10:18:31 [Stores] �������
+10:18:33   �������: 3 ������
+10:18:34   \U0001f4be 3 ������ ����� (�������)
+10:18:34 [Stores] PublishedPrices � ���� ����� ��������...
+10:18:34   [��� ���]
+10:19:12   [�������]
+10:19:26   [���� ��]
+10:19:33   [��� ���]
+10:19:39   [�������]
+
+=======================================================
+  SmartMarket � Stores Fetcher v2
+  11/04/2026 10:18
+=======================================================
+
+
+=======================================================
+Traceback (most recent call last):
+  File "C:\smartmarket\smartmarket_api\SmartMarket\integrator\fetch_all_stores.py", line 334, in <module>
+    main()
+    ~~~~^^
+  File "C:\smartmarket\smartmarket_api\SmartMarket\integrator\fetch_all_stores.py", line 316, in main
+    print(f"  \u2705 ��\"� ������ �����: {total}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1255.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 2: character maps to <undefined>
+[FAIL] exit code 1
+
+════════════════════════════════════════════════════════════
+>>> C:\smartmarket\smartmarket_api\SmartMarket\integrator\.venv\Scripts\python.exe C:\smartmarket\smartmarket_api\SmartMarket\integrator\playwright_publishedprices.py
+════════════════════════════════════════════════════════════
+
+========================================
+���: ��� ��� (user: RamiLevi)
+  ���� ���: https://url.publishedprices.co.il/login
+  ��� ��: form button[type="submit"]
+  �� �����: https://url.publishedprices.co.il/file
+  ����� 173 �����
+  �����: PriceFull7290058140886-001-070-20260411-001008.gz
+  ����� �����: 'charmap' codec can't encode character '\U0001f50c' in position 0: character maps to <undefined>
+  �����: PriceFull7290058140886-069-202604110010.gz
+  5,409 ������
+  �����: PriceFull7290058140886-721-202604110600.gz
+  2,745 ������
+  ��"� ��� ���: 8,154
+
+========================================
+���: ������� (user: yohananof)
+  ���� ���: https://url.publishedprices.co.il/login
+  ��� ��: form button[type="submit"]
+  �� �����: https://url.publishedprices.co.il/file
+  ����� 105 �����
+  �����: PriceFull7290803800003-036-202604110011.gz
+  4,716 ������
+  �����: PriceFull7290803800003-039-202604110010.gz
+  3,467 ������
+  �����: PriceFull7290803800003-012-202604110433.gz
+  4,467 ������
+  ��"� �������: 12,650
+
+========================================
+���: ���� �� (user: osherad)
+  ���� ���: https://url.publishedprices.co.il/login
+  ��� ��: form button[type="submit"]
+  �� �����: https://url.publishedprices.co.il/file
+  ����� 20 �����
+  �����: PriceFull7290103152017-001-020-20260411-080012.gz
+  7,010 ������
+  �����: PriceFull7290103152017-001-011-20260411-071013.gz
+  7,253 ������
+  �����: PriceFull7290103152017-001-009-20260411-080018.gz
+  7,268 ������
+  ��"� ���� ��: 21,531
+
+========================================
+���: ��� ��� (user: TivTaam)
+  ���� ���: https://url.publishedprices.co.il/login
+  ��� ��: form button[type="submit"]
+  �� �����: https://url.publishedprices.co.il/file
+  ����� 103 �����
+  �����: PriceFull7290873255550-075-202604110502.gz
+  3,087 ������
+  �����: PriceFull7290873255550-051-202604110010.gz
+  8,354 ������
+  �����: PriceFull7290873255550-024-202604110502.gz
+  8,399 ������
+  ��"� ��� ���: 19,840
+
+========================================
+���: ������� (user: freshmarket)
+  ���� ���: https://url.publishedprices.co.il/login
+  ��� ��: form button[type="submit"]
+  �� �����: https://url.publishedprices.co.il/file
+  ����� 49 �����
+  �����: PriceFull7290876100000-043-202604110010.gz
+  4,646 ������
+  �����: PriceFull7290876100000-003-202604110010.gz
+  4,495 ������
+  �����: PriceFull7290876100000-014-202604110034.gz
+  2,966 ������
+  ��"� �������: 12,107
+
+========================================
+���: ��� ����� (user: Keshet)
+  ���� ���: https://url.publishedprices.co.il/login
+  ��� ��: form button[type="submit"]
+  �� �����: https://url.publishedprices.co.il/file
+  ����� 30 �����
+  �����: PriceFull7290785400000-120-202604110010.gz
+  8,186 ������
+  �����: PriceFull7290785400000-318-202604110010.gz
+  2,041 ������
+  �����: PriceFull7290785400000-008-202604110010.gz
+  9,987 ������
+  ��"� ��� �����: 20,214
+
+========================================
+���: ������ ���� (user: politzer)
+  ���� ���: https://url.publishedprices.co.il/login
+  ��� ��: form button[type="submit"]
+  �� �����: https://url.publishedprices.co.il/file
+  ����� 8 �����
+  �����: PriceFull7291059100008-001-004-20260411-001008.gz
+  15,195 ������
+  �����: PriceFull7291059100008-001-011-20260411-001001.gz
+  13,254 ������
+  �����: PriceFull7291059100008-001-003-20260411-001000.gz
+  14,985 ������
+  ��"� ������ ����: 43,434
+
+========================================
+���: ���� ���� (user: SalachD)
+  ���� ���: https://url.publishedprices.co.il/login
+  ��� ��: form button[type="submit"]
+  �� �����: https://url.publishedprices.co.il/file
+  ����� 6 �����
+  �����: PriceFull7290526500006-001-007-20260411-001010.gz
+  16,943 ������
+  �����: PriceFull7290526500006-001-013-20260411-001018.gz
+  15,373 ������
+  �����: PriceFull7290526500006-001-011-20260411-001004.gz
+  16,750 ������
+  ��"� ���� ����: 49,066
+
+========================================
+���: ���� ������ (user: SuperCofixApp)
+  ���� ���: https://url.publishedprices.co.il/login
+  ��� ��: form button[type="submit"]
+  �� �����: https://url.publishedprices.co.il/file
+  ����� 0 �����
+  ���
+
+========================================
+���: ���� ���� (user: Stop_Market)
+  ���� ���: https://url.retail.publishedprices.co.il/login
+  ��� ��: form button[type="submit"]
+  �� �����: https://url.retail.publishedprices.co.il/file
+  ����� 11 �����
+  �����: PriceFull7290639000004-001-002-20260411-010013.gz
+  15,352 ������
+  �����: PriceFull7290639000004-001-004-20260411-010012.gz
+  17,711 ������
+  �����: PriceFull7290639000004-001-005-20260411-010016.gz
+  17,993 ������
+  ��"� ���� ����: 51,056
+
+========================================
+���: ��� ���� (user: doralon)
+  ���� ���: https://url.publishedprices.co.il/login
+  ��� ��: form button[type="submit"]
+  �� �����: https://url.publishedprices.co.il/file
+  ����� 156 �����
+  �����: PriceFull7290492000005-001-544-20260411-001006.gz
+  4,716 ������
+  �����: PriceFull7290492000005-651-202604110025.gz
+  2,008 ������
+  �����: PriceFull7290492000005-001-568-20260411-001513.gz
+  3,845 ������
+  ��"� ��� ����: 10,569
+
+========================================
+���: �� ���� (user: Paz_bo)
+  ���� ���: https://url.publishedprices.co.il/login
+  ��� ��: form button[type="submit"]
+  �� �����: https://url.publishedprices.co.il/file
+  ����� 250 �����
+  �����: PriceFull7290644700005-001-308-20260411-002005.gz
+  2,614 ������
+  �����: PriceFull7290644700005-001-609-20260411-003515.gz
+  2,046 ������
+  �����: PriceFull7290644700005-001-6109-20260309-001012.gz
+  2,383 ������
+  ��"� �� ����: 7,043
+
+========================================
+���: ���� ���� (user: yuda_ho)
+  ���� ���: https://publishedprices.co.il/login
+  ��� ��: form button[type="submit"]
+  �� �����: https://publishedprices.co.il/file
+  ����� 0 �����
+  ���
+
+==================================================
+��"� ������ �����: 255,664
+==================================================
+
+════════════════════════════════════════════════════════════
+>>> C:\smartmarket\smartmarket_api\SmartMarket\integrator\.venv\Scripts\python.exe C:\smartmarket\smartmarket_api\SmartMarket\integrator\playwright_shufersal.py
+════════════════════════════════════════════════════════════
+10:40:12 =======================================================
+10:40:12 ���: ������
+10:40:21   ����: http://prices.shufersal.co.il/
+10:40:26   ����: http://prices.shufersal.co.il/FileObject/UpdateCategory?storeId=001
+10:40:52   ����: http://prices.shufersal.co.il/FileObject/UpdateCategory?storeId=002
+10:41:02   ����: http://prices.shufersal.co.il/FileObject/UpdateCategory?storeId=001&catID=0&FileType=0
+10:41:18   ���� ���� �����...
+10:41:44   ���� API ����...
+10:41:49   ��"� ������� ������: 86
+10:41:49   ������� ������: 32
+10:41:49   �����: Price7290027600007-021-202604110200.gz
+10:41:50 DB �����
+10:41:55   263 ������
+10:41:55   �����: Price7290027600007-009-202604110200.gz
+10:41:58   359 ������
+10:41:58   �����: Price7290027600007-001-202604110200.gz
+10:42:00   389 ������
+10:42:00   �����: Price7290027600007-014-202604110200.gz
+10:42:05   454 ������
+10:42:05   �����: PriceFull7290027600007-001-202604110300.gz
+10:42:17   4,335 ������
+10:42:17   �����: Price7290027600007-001-202604110200.gz
+10:42:18   389 ������
+10:42:18   �����: Price7290027600007-004-202604110200.gz
+10:42:20   418 ������
+10:42:20   �����: PromoFull7290027600007-002-202604110300.gz
+10:42:21   0 ������
+10:42:21   �����: Price7290027600007-001-202604110200.gz
+10:42:23   389 ������
+10:42:23   �����: Price7290027600007-005-202604110200.gz
+10:42:25   506 ������
+10:42:25   �����: Price7290027600007-015-202604110200.gz
+10:42:27   229 ������
+10:42:27   �����: Price7290027600007-012-202604110200.gz
+10:42:29   220 ������
+10:42:29   �����: Price7290027600007-018-202604110200.gz
+10:42:31   406 ������
+10:42:31   �����: PromoFull7290027600007-001-202604110300.gz
+10:42:33   0 ������
+10:42:33   �����: Price7290027600007-023-202604110200.gz
+10:42:37   448 ������
+10:42:37   �����: Price7290027600007-011-202604110200.gz
+10:42:44   308 ������
+10:42:44   �����: PriceFull7290027600007-002-202604110300.gz
+10:42:59   4,660 ������
+10:42:59   �����: Price7290027600007-022-202604110200.gz
+10:43:01   452 ������
+10:43:01   �����: Promo7290027600007-001-202604100000.gz
+10:43:02   0 ������
+10:43:02   �����: Price7290027600007-003-202604110200.gz
+10:43:04   405 ������
+10:43:04   �����: Price7290027600007-013-202604110200.gz
+10:43:08   551 ������
+10:43:08   �����: Price7290027600007-024-202604110200.gz
+10:43:10   505 ������
+10:43:10   �����: PromoFull7290027600007-001-202604110300.gz
+10:43:12   0 ������
+10:43:12   �����: Price7290027600007-007-202604110200.gz
+10:43:14   365 ������
+10:43:14   �����: Promo7290027600007-002-202604100000.gz
+10:43:15   0 ������
+10:43:15   �����: Promo7290027600007-001-202604100000.gz
+10:43:16   0 ������
+10:43:16   �����: Price7290027600007-002-202604110200.gz
+10:43:17   528 ������
+10:43:17   �����: Price7290027600007-020-202604110200.gz
+10:43:19   480 ������
+10:43:19   �����: Price7290027600007-019-202604110200.gz
+10:43:21   440 ������
+10:43:21   �����: Price7290027600007-017-202604110200.gz
+10:43:23   443 ������
+10:43:23   �����: PriceFull7290027600007-001-202604110300.gz
+10:43:31   4,335 ������
+10:43:31   �����: Price7290027600007-002-202604110200.gz
+10:43:35   528 ������
+10:43:35   ��"� ������: 22,805
+10:43:35 =======================================================
+
+���� � 22,805 ������ ����� �������
+
+════════════════════════════════════════════════════════════
+>>> C:\smartmarket\smartmarket_api\SmartMarket\integrator\.venv\Scripts\python.exe C:\smartmarket\smartmarket_api\SmartMarket\integrator\playwright_bina.py
+════════════════════════════════════════════════════════════
+10:43:55 
+=======================================================
+10:43:55 [Bina] ���� ���� � https://kingstore.binaprojects.com/Main.aspx
+10:44:04   ����� 1000 �����
+10:44:04   ���� 3 ����� (PriceFull: 116)
+10:44:04   �����: PriceFull7290058108879-340-202604111000.gz
+10:44:04   \u2705 2366 ������
+10:44:04   �����: PriceFull7290058108879-339-202604111000.gz
+10:44:04   \u2705 1719 ������
+10:44:04   �����: PriceFull7290058108879-338-202604111000.gz
+10:44:05   \u2705 2315 ������
+10:44:23   \U0001f4be 6400 ����� �-DB
+10:44:23   ��"� ���� ����: 6400
+10:44:24 
+=======================================================
+10:44:24 [Bina] ����� 2000 � https://maayan2000.binaprojects.com/Main.aspx
+10:44:29   ����� 1000 �����
+10:44:29   ���� 3 ����� (PriceFull: 111)
+10:44:29   �����: PriceFull7290058159628-064-202604111000.gz
+10:44:29   \u2705 2101 ������
+10:44:29   �����: PriceFull7290058159628-063-202604111000.gz
+10:44:30   \u2705 1101 ������
+10:44:30   �����: PriceFull7290058159628-062-202604111000.gz
+10:44:30   \u2705 2060 ������
+10:44:47   \U0001f4be 5262 ����� �-DB
+10:44:47   ��"� ����� 2000: 5262
+10:44:48 
+=======================================================
+10:44:48 [Bina] ��� ���� � https://goodpharm.binaprojects.com/Main.aspx
+10:44:54   ����� 1000 �����
+10:44:54   ���� 3 ����� (PriceFull: 237)
+10:44:54   �����: PriceFull7290058197699-970-202604111000.gz
+10:44:54   \u2705 3133 ������
+10:44:54   �����: PriceFull7290058197699-953-202604111000.gz
+10:44:54   \u2705 3859 ������
+10:44:54   �����: PriceFull7290058197699-952-202604111000.gz
+10:44:55   \u2705 3650 ������
+10:45:15   \U0001f4be 10642 ����� �-DB
+10:45:15   ��"� ��� ����: 10642
+10:45:16 
+=======================================================
+10:45:16 [Bina] ��� ������ � https://zolvebegadol.binaprojects.com/Main.aspx
+10:45:22   ����� 1000 �����
+10:45:22   ���� 3 ����� (PriceFull: 134)
+10:45:22   �����: PriceFull7290058173198-043-202604111004.gz
+10:45:22   \u2705 3230 ������
+10:45:22   �����: PriceFull7290058173198-042-202604111004.gz
+10:45:23   \u2705 3754 ������
+10:45:23   �����: PriceFull7290058173198-041-202604111004.gz
+10:45:23   \u2705 2001 ������
+10:45:47   \U0001f4be 8985 ����� �-DB
+10:45:47   ��"� ��� ������: 8985
+10:45:48 
+=======================================================
+10:45:48 [Bina] ���� ���� � https://supersapir.binaprojects.com/Main.aspx
+10:45:54   ����� 1000 �����
+10:45:54   ���� 3 ����� (PriceFull: 116)
+10:45:55   �����: PriceFull7290058156016-264-202604111003.gz
+10:45:55   \u2705 4368 ������
+10:45:55   �����: PriceFull7290058156016-262-202604111003.gz
+10:45:55   \u2705 2826 ������
+10:45:55   �����: PriceFull7290058156016-261-202604111003.gz
+10:45:55   \u2705 2877 ������
+10:46:30   \U0001f4be 10071 ����� �-DB
+10:46:30   ��"� ���� ����: 10071
+10:46:31 
+=======================================================
+10:46:31 [Bina] ��� ����� ���� � https://superbareket.binaprojects.com/Main.aspx
+10:47:43   ����� 1000 �����
+10:47:47   ���� 3 ����� (PriceFull: 308)
+10:47:47   �����: PriceFull7290875100001-066-202604111000.gz
+10:47:49   \u2705 6397 ������
+10:47:49   �����: PriceFull7290875100001-065-202604111000.gz
+10:47:49   \u2705 4588 ������
+10:47:49   �����: PriceFull7290875100001-063-202604111000.gz
+10:47:50   \u2705 4286 ������
+10:48:28   \U0001f4be 15271 ����� �-DB
+10:48:28   ��"� ��� ����� ����: 15271
+10:48:29 
+=======================================================
+10:48:29 [Bina] ���� ���� ���� �� � https://citymarketkiryatgat.binaprojects.com/Main.aspx
+10:48:38   ����� 1000 �����
+10:48:38   ���� 3 ����� (PriceFull: 300)
+10:48:38   �����: PriceFull7290058266241-080-202604111000.gz
+10:48:39   \u2705 3421 ������
+10:48:39   �����: PriceFull7290058266241-078-202604111000.gz
+10:48:39   \u2705 4368 ������
+10:48:40   �����: PriceFull7290058266241-059-202604111000.gz
+10:48:40   \u2705 3386 ������
+10:49:13   \U0001f4be 11175 ����� �-DB
+10:49:13   ��"� ���� ���� ���� ��: 11175
+10:49:14 
+=======================================================
+10:49:14 [Bina] ���.�� ���� ������ � https://ktshivuk.binaprojects.com/Main.aspx
+10:49:23   ����� 1000 �����
+10:49:24   ���� 3 ����� (PriceFull: 64)
+10:49:24   �����: PriceFull7290058289400-004-202604110500.gz
+10:49:24   \u2705 4903 ������
+10:49:24   �����: PriceFull7290058289400-003-202604110500.gz
+10:49:25   \u2705 3520 ������
+10:49:25   �����: PriceFull7290058289400-002-202604110500.gz
+10:49:25   \u2705 3265 ������
+10:49:54   \U0001f4be 11688 ����� �-DB
+10:49:54   ��"� ���.�� ���� ������: 11688
+10:49:55 
+=======================================================
+10:49:55 [Bina] ��� ���� � https://shuk-hayir.binaprojects.com/Main.aspx
+10:50:01   ����� 1000 �����
+10:50:02   ���� 3 ����� (PriceFull: 100)
+10:50:02   �����: PriceFull7290058148776-319-202604111000.gz
+10:50:02   \u2705 1144 ������
+10:50:02   �����: PriceFull7290058148776-313-202604111000.gz
+10:50:02   \u2705 739 ������
+10:50:02   �����: PriceFull7290058148776-312-202604111000.gz
+10:50:02   \u2705 1829 ������
+10:50:22   \U0001f4be 3712 ����� �-DB
+10:50:22   ��"� ��� ����: 3712
+10:50:23 
+=======================================================
+10:50:23 [Bina] ��� ���� ��� � https://shefabirkathashem.binaprojects.com/Main.aspx
+10:50:28   ����� 1000 �����
+10:50:28   ���� 3 ����� (PriceFull: 176)
+10:50:28   �����: PriceFull7290058134977-042-202604111000.gz
+10:50:28   \u2705 3762 ������
+10:50:28   �����: PriceFull7290058134977-039-202604111000.gz
+10:50:29   \u2705 1989 ������
+10:50:29   �����: PriceFull7290058134977-038-202604111000.gz
+10:50:29   \u2705 1323 ������
+10:51:23   \U0001f4be 7074 ����� �-DB
+10:51:23   ��"� ��� ���� ���: 7074
+
+=======================================================
+  SmartMarket � Bina Scraper v5
+  10 ����� | LIVE | headless=True
+  11/04/2026 10:43
+=======================================================
+
+
+=======================================================
+Traceback (most recent call last):
+  File "C:\smartmarket\smartmarket_api\SmartMarket\integrator\playwright_bina.py", line 266, in <module>
+    asyncio.run(run(
+    ~~~~~~~~~~~^^^^^
+        chain_id=a.chain,
+        ^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        headless=not a.show,
+        ^^^^^^^^^^^^^^^^^^^^
+    ))
+    ^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\smartmarket\smartmarket_api\SmartMarket\integrator\playwright_bina.py", line 256, in run
+    print(f"  \u2705 BinaProjects ��\"�: {total} ������")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1255.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 2: character maps to <undefined>
+[FAIL] exit code 1
+
+════════════════════════════════════════════════════════════
+>>> C:\smartmarket\smartmarket_api\SmartMarket\integrator\.venv\Scripts\python.exe C:\smartmarket\smartmarket_api\SmartMarket\integrator\playwright_laib.py
+════════════════════════════════════════════════════════════
+10:51:41 
+==================================================
+10:51:41 [Laib] ������� � https://laibcatalog.co.il/victory/index.html
+10:51:48   ����� 10 �����
+10:51:48   �����: Price7290696200003-001-002-20260411-100333.gz
+10:51:49   9296 ������
+10:51:49   �����: Price7290696200003-001-001-20260411-100326.gz
+10:51:50   10122 ������
+10:51:50   �����: Price7290696200003-001-003-20260411-100321.gz
+10:51:51   8574 ������
+10:51:51   �����: Price7290696200003-001-002-20260411-090304.gz
+10:51:53   9296 ������
+10:51:53   �����: Price7290696200003-001-001-20260411-090254.gz
+10:51:53   10122 ������
+10:54:11   \U0001f4be 47410 �����
+10:54:11   ��"� �������: 47410
+10:54:12 
+==================================================
+10:54:12 [Laib] �. ��� ���� ������� � https://laibcatalog.co.il/
+10:54:30   ����� 1780 �����
+10:54:30   �����: Price7290661400001-265-202604111019-001.xml.gz
+10:54:31   270 ������
+10:54:31   �����: Price7290661400001-267-202604111019-001.xml.gz
+10:54:31   270 ������
+10:54:31   �����: Price7290661400001-250-202604111059-001.xml.gz
+10:54:31   276 ������
+10:54:31   �����: Price7290661400001-246-202604111019-001.xml.gz
+10:54:31   270 ������
+10:54:31   �����: Price7290661400001-263-202604111019-001.xml.gz
+10:54:31   270 ������
+10:54:44   \U0001f4be 1356 �����
+10:54:44   ��"� �. ��� ���� �������: 1356
+10:54:45 
+==================================================
+10:54:45 [Laib] ����� ���� � https://laibcatalog.co.il/
+10:54:55   ����� 1780 �����
+10:54:55   �����: Price7290661400001-265-202604111019-001.xml.gz
+10:54:55   270 ������
+10:54:55   �����: Price7290661400001-267-202604111019-001.xml.gz
+10:54:55   270 ������
+10:54:55   �����: Price7290661400001-250-202604111059-001.xml.gz
+10:54:55   276 ������
+10:54:55   �����: Price7290661400001-246-202604111019-001.xml.gz
+10:54:55   270 ������
+10:54:55   �����: Price7290661400001-263-202604111019-001.xml.gz
+10:54:55   270 ������
+10:54:58   \U0001f4be 1356 �����
+10:54:58   ��"� ����� ����: 1356
+
+==================================================
+  Laib Scraper | 3 ����� | LIVE
+==================================================
+
+Traceback (most recent call last):
+  File "C:\smartmarket\smartmarket_api\SmartMarket\integrator\playwright_laib.py", line 138, in <module>
+    asyncio.run(run(dry_run=a.dry_run, test=a.test))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\smartmarket\smartmarket_api\SmartMarket\integrator\playwright_laib.py", line 130, in run
+    print(f"\n  \u2705 Laib ��\"�: {total}\n")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1255.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 4: character maps to <undefined>
+[FAIL] exit code 1
+
+════════════════════════════════════════════════════════════
+>>> C:\smartmarket\smartmarket_api\SmartMarket\integrator\.venv\Scripts\python.exe C:\smartmarket\smartmarket_api\SmartMarket\integrator\html_scraper.py
+════════════════════════════════════════════════════════════
+10:55:54 
+==================================================
+10:55:54 [HTML] ��� ����
+10:55:54   [��� ����] https://www.hazi-hinam.co.il/category/
+10:55:57     dairy: 0 ������
+10:56:00     bread: 30 ������
+10:56:02     vegetables: 30 ������
+10:56:03   ��"�: 60 ������
+10:56:05   \U0001f4be 60 �����
+10:56:05 
+==================================================
+10:56:05 [HTML] ���� ����
+10:56:05   [���� ����] https://www.netiv-hachesed.co.il/online-store/
+10:56:05   ��"�: 0 ������
+10:56:05   ��� ������
+10:56:05 
+==================================================
+10:56:05 [HTML] ���� ����
+10:56:05   [���� ����] https://www.citymarket.co.il/store/
+10:56:06     Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.citymarket.co.il/store/
+Call log:
+  - navigating to "https://www.citymarket.co.il/store/", waiting until "domcontentloaded"
+
+10:56:06   ��"�: 0 ������
+10:56:06   ��� ������
+10:56:06 
+==================================================
+10:56:06 [HTML] ���.��
+10:56:06   [���.��] https://www.kt.co.il/
+10:56:06   ��"�: 0 ������
+10:56:06   ��� ������
+
+=======================================================
+  SmartMarket � HTML Scraper
+  4 ����� | LIVE
+  11/04/2026 10:55
+=======================================================
+
+
+=======================================================
+Traceback (most recent call last):
+  File "C:\smartmarket\smartmarket_api\SmartMarket\integrator\html_scraper.py", line 357, in <module>
+    asyncio.run(run(chain_id=a.chain, dry_run=a.dry_run, test=a.test))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\smartmarket\smartmarket_api\SmartMarket\integrator\html_scraper.py", line 348, in run
+    print(f"  \u2705 HTML ��\"�: {grand_total} ������")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1255.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 2: character maps to <undefined>
+[FAIL] exit code 1
+
+════════════════════════════════════════════════════════════
+>>> C:\smartmarket\smartmarket_api\SmartMarket\integrator\.venv\Scripts\python.exe C:\smartmarket\smartmarket_api\SmartMarket\integrator\factory\playwright_baby.py
+════════════════════════════════════════════════════════════
+10:56:20 ========================================================
+10:56:20 SmartMarket Baby Scraper | 11/04/2026 10:56
+10:56:20 Mode: LIVE
+10:56:20 ========================================================
+10:56:25 
+========================================================
+10:56:25 [Baby] ���� � https://www.shilav.co.il
+10:57:01   extracted 8 candidates
+10:57:02   \U0001f4be saved 8 products
+10:57:02   \u2705 ����: 8
+10:57:05 
+========================================================
+10:57:05 [Baby] TerminalX Baby � https://www.terminalx.com/baby
+10:57:24   extracted 0 candidates
+10:57:24   no products extracted
+10:57:26 
+========================================================
+10:57:26 [Baby] Fox Baby � https://www.fox.co.il/baby
+10:57:41   extracted 0 candidates
+10:57:41   no products extracted
+10:57:43 
+========================================================
+10:57:43 Total saved (baby): 8
+10:57:43 ========================================================
+[FAIL] exit code 8
+
+════════════════════════════════════════════════════════════
+>>> C:\smartmarket\smartmarket_api\SmartMarket\integrator\.venv\Scripts\python.exe C:\smartmarket\smartmarket_api\SmartMarket\integrator\factory\openformat_scraper.py
+════════════════════════════════════════════════════════════
+10:58:00 ============================================================
+10:58:00 OpenFormat scraper start | 11/04/2026 10:58
+10:58:00 Mode: LIVE
+10:58:00 ============================================================
+10:58:00 Probe failed https://openformat.economy.gov.il/natural/: HTTPSConnectionPool(host='openformat.economy.gov.il', port=443): Max retries exceeded with url: /natural/ (Caused by NameResolutionError("HTTPSConnection(host='openformat.economy.gov.il', port=443): Failed to resolve 'openformat.economy.gov.il' ([Errno 11001] getaddrinfo failed)"))
+10:58:00 Probe failed https://openformat.economy.gov.il/natural/sitemap.xml: HTTPSConnectionPool(host='openformat.economy.gov.il', port=443): Max retries exceeded with url: /natural/sitemap.xml (Caused by NameResolutionError("HTTPSConnection(host='openformat.economy.gov.il', port=443): Failed to resolve 'openformat.economy.gov.il' ([Errno 11001] getaddrinfo failed)"))
+10:58:00 Probe failed https://openformat.economy.gov.il/natural/index.xml: HTTPSConnectionPool(host='openformat.economy.gov.il', port=443): Max retries exceeded with url: /natural/index.xml (Caused by NameResolutionError("HTTPSConnection(host='openformat.economy.gov.il', port=443): Failed to resolve 'openformat.economy.gov.il' ([Errno 11001] getaddrinfo failed)"))
+10:58:00 Probe failed https://openformat.economy.gov.il/natural/feed.xml: HTTPSConnectionPool(host='openformat.economy.gov.il', port=443): Max retries exceeded with url: /natural/feed.xml (Caused by NameResolutionError("HTTPSConnection(host='openformat.economy.gov.il', port=443): Failed to resolve 'openformat.economy.gov.il' ([Errno 11001] getaddrinfo failed)"))
+10:58:00 No XML links discovered from OpenFormat
+
+═══════════════════════════════════════
+  SmartMarket — Final Report
+  11/04/2026 | Run #3
+═══════════════════════════════════════
+  📦 מוצרים סה"כ:      406,259
+  🏪 חנויות:               296
+  🔗 רשתות:                 37
+
+  מזון:         405,855 (100%)
+  תינוקות:            8 (0%)
+  אלקטרוניקה:       396 (0%)
+
+  זמן ריצה: 0.7 שעות
+  הצליח: 3/8 סורקים
+═══════════════════════════════════════
+
+Failures:
+fetch_all_stores: exit code 1
+bina (10 chains): exit code 1
+laib (victory +): exit code 1
+html (hazi-hinam etc): exit code 1
+baby/kids: exit code 8
